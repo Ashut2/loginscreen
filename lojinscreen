@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+int main() {
+// 1) - hello harsh sir this part is just the defining user input part of login . 
+    char USERNAME1[] = "Hiisir";
+    char PASS1[] = "hii2023" ;
+    char USERNAME2[100];
+    char PASS2[100];
+    printf("Please Enter Your Username Sir ==  %s",USERNAME2);
+    scanf("%s",USERNAME2);
+    printf("Please Enter your Pass. Sir ==  %s",PASS2);
+    scanf(" %s",PASS2);
+// 2) - Now this part matches the value and allows user to login ==
+    if(strcmp(USERNAME2 ,USERNAME1)==0){
+        if(strcmp(PASS2,PASS1)==0){
+            printf("login successfull!");
+        }
+        else{
+            printf("incorrect password\n");
+        }
+    }else{
+        printf("username not found !");
+    }
+// my code ends here ! 
+    
+    return 0;
+}
